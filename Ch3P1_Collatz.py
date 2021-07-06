@@ -1,5 +1,4 @@
 def collatz(number):
-    print (number)
     while int(number)>1:
         if int(number)%2==0:
             number=int(number)//2
