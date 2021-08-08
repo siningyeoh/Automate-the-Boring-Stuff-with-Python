@@ -19,20 +19,8 @@ testboard = {'1a': 'wking', '1b': '', '1c': '', '1d': '', '1e': '', '1f': '', '1
 truepieces = ['bking','wking','bqueen','wqueen','brook','wrook','bbishop','wbishop','bknight','wknight','bpawn','wpawn']
         
 def isValidChessBoard(board):
-    squarecount = 0
-    bkingcount = 0
-    wkingcount = 0
-    bqueencount = 0
-    wqueencount = 0
-    brookcount = 0
-    wrookcount = 0
-    bbishopcount = 0
-    wbishopcount = 0
-    bknightcount = 0
-    wknightcount = 0
-    bpawncount = 0
-    wpawncount = 0
-    othercount = 0
+    squarecount = bkingcount = wkingcount = bqueencount = wqueencount = brookcount = wrookcount = bbishopcount = wbishopcount = bknightcount = \
+                  wknightcount = bpawncount = wpawncount = othercount = 0
     for square in board.keys():
         if square in trueboard: #all pieces must be on a valid space from '1a' to '8h'
             squarecount=squarecount+1
