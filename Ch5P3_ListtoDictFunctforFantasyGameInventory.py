@@ -1,7 +1,7 @@
 def addToInventory(inventory, addedItems):
-    for item in range(len(addedItems)):
-        inventory.setdefault(addedItems[item],0)
-        inventory[addedItems[item]] += 1
+    for item in addedItems:
+        inventory.setdefault(item,0)
+        inventory[item] += 1
     print("Inventory:")
     item_total = 0
     for k, v in inventory.items():
