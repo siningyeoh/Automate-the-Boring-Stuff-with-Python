@@ -26,31 +26,31 @@ def isValidChessBoard(board):
             squarecount=squarecount+1
     for pieces in board.values(): 
         if 'bking' in pieces:
-            bkingcount = bkingcount+1
+            bkingcount += 1
         if 'wking' in pieces:
-            wkingcount = wkingcount+1
+            wkingcount += 1
         if 'bqueen' in pieces:
-            bqueencount = bqueencount+1
+            bqueencount += 1
         if 'wqueen' in pieces:
-            wqueencount = wqueencount+1        
+            wqueencount += 1        
         if 'brook' in pieces:
-            brookcount = brookcount+1
+            brookcount += 1
         if 'wrook' in pieces:
-            wrookcount = wrookcount+1
+            wrookcount += 1
         if 'bbishop' in pieces:
-            bbishopcount = bbishopcount+1
+            bbishopcount += 1
         if 'wbishop' in pieces:
-            wbishopcount = wbishopcount+1
+            wbishopcount += 1
         if 'bknight' in pieces:
-            bknightcount = bknightcount+1
+            bknightcount += 1
         if 'wknight' in pieces:
-            wknightcount = wknightcount+1
+            wknightcount += 1
         if 'bpawn' in pieces:
-            bpawncount = bpawncount+1
+            bpawncount += 1
         if 'wpawn' in pieces:
-            wpawncount = wpawncount+1  
+            wpawncount += 1  
         if not(pieces in truepieces or pieces==''): #any square not occupied by a valid b/w chess piece is empty
-            othercount = othercount+1
+            othercount += 1
     if squarecount == 64 and bkingcount == 1 and wkingcount == 1 and bqueencount <= 1 and wqueencount <= 1 and brookcount <= 2 and wrookcount <= 2\
     and bbishopcount <= 2 and wbishopcount <= 2 and bknightcount <= 2 and wknightcount <= 2 and bpawncount <= 8 and wpawncount <= 8 and othercount == 0:
         print ('True')
